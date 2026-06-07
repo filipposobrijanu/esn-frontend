@@ -1,0 +1,316 @@
+/* ===== FOOTER FADE ANIMATIONS ===== */
+
+/* Main footer entrance animation */
+.footer {
+  background: rgb(240, 240, 240);
+  animation: footerSlideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes footerSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation for footer columns */
+.footer .col-lg-3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Stagger animation delays for columns */
+.footer .col-lg-3:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.footer .col-lg-3:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.footer .col-lg-3:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.footer .col-lg-3:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced header badges animation */
+.footer .d-inline-flex {
+  transform: translateX(-10px);
+  opacity: 0;
+  animation: slideInBadge 0.5s ease forwards;
+}
+
+.footer .col-lg-3:nth-child(1) .d-inline-flex {
+  animation-delay: 0.15s;
+}
+.footer .col-lg-3:nth-child(2) .d-inline-flex {
+  animation-delay: 0.25s;
+}
+.footer .col-lg-3:nth-child(3) .d-inline-flex {
+  animation-delay: 0.35s;
+}
+.footer .col-lg-3:nth-child(4) .d-inline-flex {
+  animation-delay: 0.45s;
+}
+
+@keyframes slideInBadge {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced social buttons with shimmer effect */
+#ig_but,
+#tiktok_but,
+#fb_but {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: scale(0.8);
+  animation: socialButtonPop 0.5s ease forwards;
+}
+
+#ig_but {
+  animation-delay: 0.3s;
+}
+#tiktok_but {
+  animation-delay: 0.4s;
+}
+#fb_but {
+  animation-delay: 0.5s;
+}
+
+@keyframes socialButtonPop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#ig_but::before,
+#tiktok_but::before,
+#fb_but::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s;
+}
+
+#ig_but:hover::before,
+#tiktok_but:hover::before,
+#fb_but:hover::before {
+  left: 100%;
+}
+
+/* Enhanced hover effects for social buttons */
+#ig_but:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(230, 0, 122, 0.3);
+}
+
+#tiktok_but:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(13, 13, 13, 0.3);
+}
+
+#fb_but:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 98, 232, 0.3);
+}
+
+/* Enhanced link animations */
+#linkss {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
+}
+
+#linkss::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+#linkss:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+#linkss:hover::after {
+  width: 100%;
+}
+
+/* Text content fade-in */
+.footer p,
+.footer li {
+  opacity: 0;
+  animation: textFadeIn 0.6s ease forwards;
+}
+
+.footer .col-lg-3:nth-child(1) p,
+.footer .col-lg-3:nth-child(1) li {
+  animation-delay: 0.2s;
+}
+.footer .col-lg-3:nth-child(2) p,
+.footer .col-lg-3:nth-child(2) li {
+  animation-delay: 0.3s;
+}
+.footer .col-lg-3:nth-child(3) p,
+.footer .col-lg-3:nth-child(3) li {
+  animation-delay: 0.4s;
+}
+.footer .col-lg-3:nth-child(4) p,
+.footer .col-lg-3:nth-child(4) li {
+  animation-delay: 0.5s;
+}
+
+@keyframes textFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Copyright section animation */
+.footer .text-center.p-2 {
+  background-color: rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  animation: copyrightFadeIn 0.6s ease 0.6s forwards;
+}
+
+@keyframes copyrightFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Logo and icon animations in copyright */
+.footer .text-center.p-2 img,
+.footer .text-center.p-2 svg {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: copyrightIcons 0.5s ease 0.8s forwards;
+}
+
+.footer .text-center.p-2 small {
+  opacity: 0;
+  animation: copyrightText 0.5s ease 0.9s forwards;
+}
+
+@keyframes copyrightIcons {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes copyrightText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Enhanced badge hover effects */
+.footer .d-inline-flex {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.footer .d-inline-flex:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 46, 46, 0.2);
+}
+
+/* Smooth scroll behavior for email links */
+#linkss[href^="mailto"] {
+  color: #000000ff;
+}
+
+#linkss[href^="mailto"]:hover {
+  color: #0056b3;
+}
+
+/* Responsive animations */
+@media (max-width: 992px) {
+  .footer .col-lg-3 {
+    animation-delay: 0.1s !important;
+  }
+
+  .footer .col-lg-3:nth-child(2) {
+    animation-delay: 0.2s !important;
+  }
+  .footer .col-lg-3:nth-child(3) {
+    animation-delay: 0.3s !important;
+  }
+  .footer .col-lg-3:nth-child(4) {
+    animation-delay: 0.4s !important;
+  }
+}
+
+/* Loading state for better perceived performance */
+.footer {
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Remove shimmer after animation completes */
+.footer.animated::before {
+  display: none;
+}
+.footer {
+  background: rgb(240, 240, 240);
+}
+#linkss {
+  transition: all 0.2s ease;
+}
+#linkss:hover {
+  opacity: 0.6;
+  transition: all 0.1s ease;
+}

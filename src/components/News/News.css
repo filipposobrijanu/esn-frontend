@@ -1,0 +1,106 @@
+.news {
+  max-width: 1050px;
+  margin: 0 auto;
+  justify-content: center !important;
+  text-align: center;
+  padding: 2rem 1em;
+}
+/* Add to your News.css file */
+
+/* Pagination responsive styles */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+  border-radius: 50rem !important;
+  background: white;
+  color: #6c757d;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  padding: 0.375rem 0.75rem;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #e9ecef;
+  border-color: #6c757d;
+  transform: translateY(-1px);
+}
+
+.pagination-btn.active {
+  background-color: #000;
+  color: white;
+  border-color: #000;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pagination-dots {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  user-select: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .pagination-container {
+    gap: 0.125rem;
+  }
+
+  .pagination-btn {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .pagination-dots {
+    min-width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* Hide some page numbers on very small screens */
+  @media (max-width: 480px) {
+    .pagination-btn:not(.active):not(:first-child):not(:last-child):not(
+        .prev-next
+      ) {
+      display: none;
+    }
+
+    .pagination-dots {
+      display: none;
+    }
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+  .pagination-container {
+    gap: 0.5rem;
+  }
+
+  .pagination-btn {
+    min-width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}

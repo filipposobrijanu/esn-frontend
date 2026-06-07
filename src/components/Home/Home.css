@@ -1,0 +1,47 @@
+.homediv {
+  max-width: 1050px;
+  margin: 0 auto;
+  justify-content: center !important;
+  text-align: center;
+  padding: 2rem 1em;
+}
+
+.partners-container {
+  /*max-height: 400px;*/
+  overflow-y: auto;
+  padding-right: 10px;
+}
+#hoverable-shit {
+  transition: all ease 0.2s;
+}
+#hoverable-shit:hover {
+  opacity: 0.6;
+  transition: all ease 0.1s;
+}
+/* Custom scrollbar for partners container */
+.partners-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.partners-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.partners-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.partners-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+#link-how-to-help:hover {
+  background-color: #eeeeee;
+  transition: all 0.1s ease;
+  border: 1px solid;
+}
+#link-how-to-help {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}

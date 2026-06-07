@@ -1,0 +1,36 @@
+.hero {
+  max-width: 1325px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Mobile first - stacked layout */
+.hero-image {
+  border-radius: 1rem 1rem 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
+}
+
+.hero-text {
+  border-radius: 0 0 1rem 1rem !important;
+}
+
+/* Desktop - side by side layout */
+@media (min-width: 992px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero-image {
+    border-radius: 1rem 0 0 1rem !important;
+  }
+
+  .hero-text {
+    border-radius: 0 1rem 1rem 0 !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+}

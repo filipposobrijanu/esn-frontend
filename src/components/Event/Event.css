@@ -1,0 +1,15 @@
+.event {
+  max-width: 1050px;
+  margin: 0 auto;
+  justify-content: center !important;
+  text-align: center;
+  padding: 2rem 1em;
+}
+#link-how-to-help3:hover {
+  background-color: #eeeeee;
+  transition: all 0.1s ease;
+}
+#link-how-to-help3 {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}

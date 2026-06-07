@@ -1,0 +1,14 @@
+.partners {
+  max-width: 1050px;
+  margin: 0 auto;
+  justify-content: center !important;
+  text-align: center;
+  padding: 2rem 1em;
+}
+#hoverable-shit {
+  transition: all ease 0.2s;
+}
+#hoverable-shit:hover {
+  opacity: 0.6;
+  transition: all ease 0.1s;
+}

@@ -1,0 +1,7 @@
+.breadcrum span {
+  transition: all ease 0.2s;
+}
+.breadcrum span:hover {
+  opacity: 0.6;
+  transition: all ease 0.1s;
+}
