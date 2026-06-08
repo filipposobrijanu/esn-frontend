@@ -5,7 +5,8 @@
 
 A dedicated web portal for the Erasmus Student Network (ESN) at the University of Piraeus (UniPi). This application serves as a centralized hub for international students, streamlining information access and community engagement through a modern, responsive interface.
 
-![ESN UniPi Dashboard](Images/1.PNG)
+![ESN UniPi](images/0.PNG)
+![ESN UniPi](images/1.PNG)
 
 ## ✨ Core Features
 
@@ -13,6 +14,9 @@ A dedicated web portal for the Erasmus Student Network (ESN) at the University o
 * **Information Architecture:** Structured navigation designed to guide users through ESN services, events, and essential university information.
 * **Responsive Layout:** A fluid, mobile-first design ensuring the portal is accessible on any device, perfect for students on the move.
 * **Clean UI/UX:** A modern aesthetic that aligns with organizational branding, focusing on user accessibility and clarity.
+
+![ESN UniPi](images/2.PNG)
+![ESN UniPi](images/3.PNG)
 
 ## 🛠️ Built With
 
