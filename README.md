@@ -7,6 +7,9 @@ A dedicated web portal for the Erasmus Student Network (ESN) at the University o
 
 ![ESN UniPi](images/0.PNG)
 ![ESN UniPi](images/1.PNG)
+![ESN UniPi](images/6.PNG)
+![ESN UniPi](images/7.PNG)
+![ESN UniPi](images/8.PNG)
 
 ## ✨ Core Features
 
