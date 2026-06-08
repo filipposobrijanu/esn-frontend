@@ -29,4 +29,4 @@ A dedicated web portal for the Erasmus Student Network (ESN) at the University o
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/filipposobrijanu/ESN-UniPi-Portal.git](https://github.com/filipposobrijanu/ESN-UniPi-Portal.git)
+   git clone [https://github.com/filipposobrijanu/esn-frontend.git](https://github.com/filipposobrijanu/esn-frontend.git)
