@@ -16,16 +16,15 @@
 
 ---
 
-### ✨ Core Features
+### Core Features
 
 * **International Community Hub:** Tailored information delivery structures designed to guide Erasmus students seamlessly through essential local university workflows and social resource ecosystems.
 * **Structured Information Architecture:** Intuitive content hierarchies mapping ESN localized services, real-time dynamic event calendars, and academic networking resources.
 * **Fluid Multi-Device Responsiveness:** Engineered with an adaptive viewport strategy, ensuring seamless functionality across mobile and desktop environments for students on the move.
-* **High-End UI/UX Ecosystem:** Clean, modern production layout matching formal corporate identity assets with a heavy emphasis on accessible data visibility and contrast.
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 **Frontend Logic & Framework**
 <p align="left">
@@ -55,7 +54,7 @@
 
 ---
 
-### 📸 Application Showcase
+### Application Showcase
 
 <p align="center">
   <img src="images/0.PNG" width="48%" />
@@ -75,7 +74,7 @@
 
 ---
 
-### 🚀 Getting Started
+### Getting Started
 
 **1. Clone the repository:**
 ```bash
